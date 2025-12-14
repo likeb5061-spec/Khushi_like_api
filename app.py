@@ -111,7 +111,7 @@ def create_protobuf(uid):
         message.garena = 1
  
         if hasattr(message, 'ob_version'):
-            message.ob_version = "OB48"
+            message.ob_version = "OB51"
         return message.SerializeToString()
     except Exception as e:
         app.logger.error(f"Error creating uid protobuf: {e}")
